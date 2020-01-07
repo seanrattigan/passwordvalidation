@@ -1,4 +1,5 @@
-
+# Insert complete file header here.
+# Use http://pep8online.com/ to check PEP8
 
 import sha256
 import length
@@ -23,7 +24,7 @@ password = inputpass()
 # sha256.hashpass(password)
 for test in tests:
     if test(password):
-        pass
+        print(f"Passed {test}")
     else:
         print(f"Failed Test: {test}")
 
