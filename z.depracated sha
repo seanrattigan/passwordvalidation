@@ -1,0 +1,7 @@
+import hashlib
+import main
+
+def hashpass(password):
+	passwords = main.inputpass()
+	hash_thiss = hashlib.sha256((password).encode('utf-8')).hexdigest()
+	print(f"Your password is : {hash_thiss}")
